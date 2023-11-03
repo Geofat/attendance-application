@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Attendance Tracker</h1>
+    <form id="attendance-form" >
+        <input type="text" id="student-name" placeholder="Student Name">
+        <input type="text" id="student-class" placeholder="Class">
+        <input type="text" id="seat-number" placeholder="Seat Number">
+        <label for="attendance-status">Attendance Status:</label>
+        <select id="attendance-status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select>
+        <input type="submit" id="mark-attendance" value="Mark Attendance">
+    </form>
+    <div id="attendance-list">
+        <h2>Attendance List</h2>
+        <ul id="attendance-data">
+            <!-- Attendance data will be displayed here -->
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
